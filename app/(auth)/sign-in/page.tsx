@@ -10,15 +10,19 @@ import { Input } from "@/components/ui/input";
 import Google from "@/public/google.svg";
 import Apple from "@/public/apple.svg";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const SignInPage = () => {
-  const { status, data } = useSession();
+  const { status } = useSession();
 
   const router = useRouter();
-  
-  if (status === "authenticated") {
-    router.push("/dashboard");
-  }
+
+  useEffect(() => {
+    if (status === "authenticated") {
+      router.push("/dashboard");
+    }
+  }, [])
+
 
   return (
     <div className="flex items-center justify-center h-full w-full">

@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 interface NavigationItemProps {
   label: string;
@@ -10,7 +10,6 @@ interface NavigationItemProps {
 }
 
 const NavigationItem = ({ label, icon, path }: NavigationItemProps) => {
-  const router = useRouter();
   const Origpath = usePathname();
 
   return (

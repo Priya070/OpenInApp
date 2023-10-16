@@ -8,15 +8,9 @@ import { dashboardData } from "@/constants";
 import { Instagram, MailIcon, Plus, YoutubeIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import Youtube from "@/public/twitter.svg";
-import Insta from "@/public/insta.svg";
-import Whatsapp from "@/public/whatsapp.svg";
-import Mail from "@/public/Mail.svg";
-
 import {
   Dialog,
   DialogContent,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -24,11 +18,6 @@ import {
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
