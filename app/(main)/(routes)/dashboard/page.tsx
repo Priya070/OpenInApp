@@ -92,7 +92,7 @@ const DashboardPage = () => {
             </div>
           )}
           {hasData && (
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start p-6">
               <Title>{name}</Title>
               <div className="grid grid-cols-2 gap-12 mt-6 w-full">
                 <p className="underline flex gap-2 items-center">
